@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>HTTP Emulator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Welcome Friend to HTTP Emulator! </h1>
+<br>
+<h2>Submit your data for processing: </h2>
+<form action="#" th:action="@{/}" th:object="${data}" method="post">
+    <p>Insert range for random number (example: 7-16): <input type="text" th:field="*{randNumber}" /></p>
+    <p>Insert number for counter (example: 5): <input type="text" th:field="*{counterValue}" /></p>
+    <p>Insert message for log (example: Hello Friend!): <input type="text" th:field="*{logMessage}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

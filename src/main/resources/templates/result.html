@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>HTTP Emulator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Your result:</h1>
+    <p th:text="'Your new random number is: ' + ${data.randNumber}"></p>
+    <p th:text="'Value of counter now is: ' + ${data.counterValue}"></p>
+    <p th:text="'Result of logging your message: ' + ${data.logMessage}"></p>
+    <a href="/">Submit another data</a>
+</body>
+</html>
